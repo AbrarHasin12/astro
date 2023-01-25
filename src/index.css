@@ -49,10 +49,6 @@
     @apply grid place-content-center bg-[url('./assets/brano-K2MsWQc0M0k-unsplash.png')] bg-cover bg-center bg-no-repeat h-[50vh] w-full overflow-hidden relative;
   }
 
-  .watermark-container {
-    @apply grid place-content-center bg-[url('./assets/Path63.png')] bg-cover bg-center bg-no-repeat overflow-hidden w-auto h-auto mt-32 top-10 left-10;
-  }
-
   /* NavBar */
   .auths {
     @apply flex items-center justify-between space-x-4 mx-4 md:mx-6 text-sm md:text-lg lg:text-xl xl:text-2xl;

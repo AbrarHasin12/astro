@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div>
       <div className="header-container ">
         <NavBar />
-        <div className="watermark-container "></div>
+      
       </div>
 
       <FrontPage />
