@@ -6,7 +6,6 @@ const LandingPage = () => {
     <div>
       <div className="header-container ">
         <NavBar />
-      
       </div>
 
       <FrontPage />
