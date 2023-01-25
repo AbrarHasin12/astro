@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cutOff-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+
+@layer base {
+  nav {
+    @apply flex items-center justify-between h-12 sticky top-0 font-semibold w-screen mr-2 z-50 mb-56;
+  }
+}
+
+@layer components {
+  /* Article */
+
+  .rect-article {
+    @apply w-full h-4 bg-[#383336] flex items-center;
+  }
+
+  .circle {
+    @apply rounded-full w-14 h-14 bg-white mr-8 ml-8 border-[#383336] border-[4px];
+  }
+
+  .article-btns {
+    @apply bg-[#C5A38B] font-semibold;
+  }
+
+  /* ArticleSection */
+
+  .article-section {
+    @apply grid gap-y-10 mt-6 md:grid-cols-2 md:gap-x-4;
+  }
+
+  .article-section-btns {
+    @apply text-sm p-2 px-14 rounded-3xl font-semibold md:text-xl;
+  }
+
+  .article-section-btns-layout {
+    @apply grid place-content-center gap-4 mt-4 md:grid-cols-2;
+  }
+
+  /* LandingPage */
+  .header-container {
+    @apply grid place-content-center bg-[url('./assets/brano-K2MsWQc0M0k-unsplash.png')] bg-cover bg-center bg-no-repeat h-[50vh] w-full overflow-hidden relative;
+  }
+
+  .watermark-container {
+    @apply grid place-content-center bg-[url('./assets/Path63.png')] bg-cover bg-center bg-no-repeat overflow-hidden w-auto h-auto mt-32 top-10 left-10;
+  }
+
+  /* NavBar */
+  .auths {
+    @apply flex items-center justify-between space-x-4 mx-4 md:mx-6 text-sm md:text-lg lg:text-xl xl:text-2xl;
+  }
+
+  .joinUs {
+    @apply text-black bg-white px-4 py-2 rounded-full;
+  }
+
+  /* FrontPage */
+
+  .frontpage-rect {
+    @apply z-50 h-12 w-3/4 bg-[#C5A38B] opacity-50 -my-6 m-auto;
+  }
+}
